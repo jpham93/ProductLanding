@@ -1,0 +1,281 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:rgba(235, 235, 235, 0.712);
+    width:90%;
+    margin: auto;
+}
+
+/*Header and nav-bar styling*/
+#header{
+    font-family: 'Courier New', Courier, monospace;
+    /*border: 5px red solid;*/
+
+    /*have elements in the nav bar align at the end of the container*/
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+}
+
+#header-title{
+    font-size:30px
+}
+
+#header-img{
+    position: relative;
+    top:0.5vh; /*Align icon vertically with title*/
+
+    height: 30px;
+    border-radius: 50%; /*round out the icon*/
+}
+
+#nav-bar{
+    width: 40vw; /*extend the container*/
+    margin-left:auto; /*align the links towards left side of the page*/
+
+    display: flex;
+    flex-direction: row; /*stack them horizontally*/
+    justify-content: space-around; /*puts space in between the items*/
+
+    /*border: 2px purple solid;*/
+
+    list-style: none; /*remove bullet points*/
+}
+
+#nav-bar a{
+    text-decoration-line: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main{
+    /*border: 3px silver solid;*/
+
+    width:1000px;  
+    margin: auto;
+}
+
+#title{
+    text-align: center;
+}
+
+#email-container{
+    /*set a fixed size for email form*/
+    width: 600px;
+    height: 100px;
+    margin: auto;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    /*border: 2px aqua solid;*/
+}
+
+/*email bar sizing*/
+#email{
+    width: 300px;
+    height: 20px;
+}
+
+/*individual styling for button*/
+input[value="Get Started!"]{
+    width: 120px;
+    height: 30px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-style: oblique;
+    font-weight: 700;
+
+    border: 0px;
+    background-color: rgb(250, 218, 36);
+}
+
+
+/*list images sizing and placement*/
+li{
+   list-style: none;
+   margin-left: -4%; /*bring left margin closer to edge of container*/
+}
+
+img.detail-icon{
+    height: 120px;
+    float: left;
+    padding: 1vh 1vh 0 0;
+    border-radius: 50%;
+}
+
+
+/*description menu
+#descriptions{
+    border: 5px blue solid;
+}*/
+
+/*video container that holds iframe content*/
+#video-wrapper{
+    width:100%;
+    /*border: 1px black solid;*/
+    display: flex;
+    justify-content: center;
+    padding: 5vh 0 5vh 0;
+
+}
+
+/*
+#video{
+    border: 5px yellow solid;
+}*/
+
+/*container that has hold each choice box*/
+.selection-menu{
+    /*border: 5px orange solid;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 2vh;
+}
+
+/*box choice that holds description of each product*/
+.choices{
+    width:30%;
+    text-align: center;
+
+    /*Space details within box choices evenly*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    /*Box border*/
+    border: 2px solid orange;
+}
+
+.price{
+    font-size: 24px;
+    background-color: beige;
+}
+
+/*Styling and positioning*/
+.select-button{
+    width: 120px;
+    height: 30px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-weight: 700;
+
+    border: 0px;
+    background-color: rgb(250, 218, 36);
+
+    /*Positioning*/
+    margin: auto auto 5px auto;
+}
+
+.select-button:hover{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(1, 124, 18);
+    color: white;
+
+    transition: border-radius 2s, width 2s, height 2s, color 1s, background-color 1.5s;
+}
+
+
+.select-button:focus{
+    outline: none;
+}
+
+
+/*Footer*/
+#footer-menu{
+    /*border: 5px aqua solid;*/
+    text-align: right;
+    color: black;
+    text-shadow: 1px 1px whitesmoke;
+    background-color: rgba(189, 189, 189, 0.63);
+}
+
+#footer-menu a{
+    text-decoration-line: none;
+    color: black;
+    text-shadow: 0 0;
+    margin-top: 2vh;
+}
+
+/****Responsive Design****/
+
+@media only screen and (max-width:1075px){
+    /*resize main container to fit entire screen*/
+    body{
+        width:100%;
+    }
+    main{
+        width:100%;
+    }
+
+}
+
+@media only screen and (max-width:925px){
+    /*align navigation bar vertically*/
+    #nav-bar{
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    /*align choices within this menu vertically*/
+    .selection-menu{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*added padding and created static width from each box*/
+    .choices{
+        margin-bottom: 1vh;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 635px){
+    /*remove image after screen gets too crowded*/
+    img.detail-icon{
+        width: 0;
+    }
+
+    #email-container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 525px){
+    
+    #header{
+        flex-direction: column;
+        align-items: center;
+        min-height: 100px;
+    }
+
+    #nav-bar{
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (max-width: 325px){
+    #header-title{
+        font-size: 25px;
+    }
+
+    /*prevent box from spilling over in very smaller screens*/
+    .choices{
+        width:90%;
+    }
+
+    #email{
+        width:90%;
+    }
+}

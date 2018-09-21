@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jimmy's Steak</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="product.css" />
+    </head>
+    <body>
+        <header id="header">
+            <div>
+                <img src="https://i.pinimg.com/236x/29/bb/cb/29bbcbe455f790cfc75b6ea52db014a1--free-icon-knifes.jpg" alt="Header Image" id="header-img"> 
+                <span id="header-title"> <b>Jimmy's Steak</b> </span>
+            </div>
+            <!--Dummy links-->
+            <nav id="nav-bar">
+                    <a href="#" class="nav-link">Description</a>
+                    <a href="#" class="nav-link">How Do We Prepare It?</a>
+                    <a href="#" class="nav-link">Listings</a>
+            </nav>
+        </header>
+
+        <main>
+                <h1 id="title">Best Online Steaks</h1>
+            <form action="https://www.freecodecamp.com/email-submit" id="email-container">
+                <label for="email">Enter your e-mail for our lastest promotions and offers! </label><input type="email" id="email" placeholder="johnsmith@email.net" name="Email" style="text-align: center;">
+                <input type="submit" name="EmailSubmit" value="Get Started!">
+            </form>
+            <ul id="descriptions">
+                <li id="organic">
+                    <img class="detail-icon" src="data:image/png;base64,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" 
+                    alt="Icon of organic symbol, leaf" title="Organic">
+                    <h3 class="detail-title">Organic and Home Grown</h3>
+                    <p>Meat ethically farmed and raised by trusted ranchers and farmers. There is no fear of GMO's, added hormones, or hidden ingredients
+                    as these local sources are held to the highest standards.</p>
+                    <br>
+                </li>
+                <li id="shipping">
+                    <img class="detail-icon" src="https://image.freepik.com/free-icon/delivery-truck_318-61634.jpg" alt="Icon of shipping struck" title="Shipping">
+                    <h3 class="detail-title">Great Shipping</h3>
+                    <p>We deliver the meat fresh and ready to cook. We have weekly shipping for all of the contiguous 48 states! The meat can be plain, untreated,
+                    or marinated, rubbed, smoked, or prepared in 20 different ways with our Prepped Meat Plus.</p>
+                    <br>
+                </li>
+                <li id="free">
+                    <img class="detail-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEaYNz6GvxWqo_61l5ARv03aJUDh5ucPnPwGURFlFU0zXssAPj" alt="An Icon with the Word Free" title="Free">
+                    <h3 class="detail-title">Try Us For Free!</h3>
+                    <p>And to get you started, Your first delivery is free! All you have to do is sign up with your e-mail. If you like it, you can subscribe
+                    and receive delicious and nutritious meat as often as once a week!</p>
+                    <br>
+                </li>
+            </ul>
+
+            <div id="video-wrapper">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/kbpIYAnt-7k" allowfullscreen></iframe>
+            </div>
+
+            <form action="https://www.freecodecamp.com/email-submit" id="product-selection">
+                <div class="selection-menu">
+                    <div id="ny" class="choices">
+                        <h3 class="item">New York Strip</h3>
+                        <h4 class="price">$15</h4>
+                        <p>
+                            This is our simplest option and everyone's favorite!
+                            Here is our best example of quality that doesn't break
+                            your bank!
+                        </p>
+                        <input type="submit" name="nystrip" value="Select" class="select-button">
+                    </div>
+                    <div id="tt" class="choices">
+                        <h3 class="item">Tri Tip</h3>
+                        <h4 class="price">$20</h4>
+                        <p>
+                            For a more refined and tender cut, try our tri-tip.
+                            We offer only the most succulent versions of tri-tip
+                            that is sure to have you ordering only in bulk.
+                        </p>
+                        <input type="submit" name="tritip" value="Select" class="select-button">
+                    </div>
+                    <div id="re" class="choices">
+                        <h3 class="item">Ribeye</h3>
+                        <h4 class="price">$26</h4>
+                        <p>
+                            If money isn't a problem, try our favorite cut. It is 
+                            ribeye at an unbeatable price. If this is your first time having
+                            rib eye, try it with our artisanal marinade.
+                        </p>
+                        <input type="submit" name="ribeye" value="Select" class="select-button">
+                    </div>
+                </div>
+            </form>
+
+            <div id="footer-menu">
+                <!--These are just links that point to top. Not real external links-->
+                <a href="#header">Privacy</a>    
+                <a href="#header">Terms</a>
+                <a href="#header">Contact</a>
+
+                <br>
+
+                Jimmy's Steak&copy;
+            </div>
+
+        </main>
+
+    </body>
+</html>
